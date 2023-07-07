@@ -1,7 +1,7 @@
 {
   "name": "cross-tab-notifier",
   "version": "0.0.0",
-  "description": "get orientation from a jpeg buffer",
+  "description": "Notify opened tabs (in the same browser) of your application.",
   "repository": "git@github.com:fisker/cross-tab-notifier.git",
   "license": "MIT",
   "author": {
