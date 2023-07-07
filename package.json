@@ -15,13 +15,10 @@
     "url": "https://www.fiskercheung.com/"
   },
   "sideEffects": false,
-  "export": "index.js",
   "files": [
     "index.js"
   ],
   "scripts": {
-    "clean": "run-p clean:*",
-    "clean:dist": "del-cli dist",
     "dist": "run-p dist:*",
     "dist:npm": "np --yolo --no-yarn",
     "format": "run-p format:*",
@@ -33,7 +30,8 @@
     "lint:eslint": "eslint \"**/*.{js,mjs,cjs,vue}\"",
     "lint:markdown": "markdownlint \"**/*.md\" --ignore \"**/node_modules/**\"",
     "lint:package-json": "yarn run format:package-json --check",
-    "lint:prettier": "prettier \"**/*.{css,html,js,cjs,mjs,json,less,md,scss,ts,vue,yaml,yml}\" --check"
+    "lint:prettier": "prettier \"**/*.{css,html,js,cjs,mjs,json,less,md,scss,ts,vue,yaml,yml}\" --check",
+    "release": "run-s lint dist"
   },
   "devDependencies": {
     "@fisker/commitlint-config": "2.0.5",
@@ -53,5 +51,6 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  }
+  },
+  "export": "index.js"
 }

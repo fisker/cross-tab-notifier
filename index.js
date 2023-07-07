@@ -24,7 +24,7 @@ class CrossTabNotifier {
       } catch {}
 
       if (!message) {
-        return;
+        return
       }
 
       for (const listener of listeners) {
