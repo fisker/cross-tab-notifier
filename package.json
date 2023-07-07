@@ -1,6 +1,6 @@
 {
   "name": "cross-tab-notifier",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Notify opened tabs (in the same browser) of your application.",
   "homepage": "https://github.com/fisker/cross-tab-notifier#readme",
   "bugs": {
